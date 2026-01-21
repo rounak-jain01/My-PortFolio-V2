@@ -70,7 +70,7 @@ const Profile = () => {
           {/* Main Image Container */}
           <div className="relative aspect-square rounded-[2rem] overflow-hidden border border-white/10 bg-neutral-900/50 backdrop-blur-sm">
             <img 
-              src="Images/My photo.jpeg" 
+              src="src/assets/my-photo.jpeg" 
               alt="Profile" 
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-100 hover:scale-110"
             />
