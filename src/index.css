@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+
+body {
+  background-color: #050505; /* Pure black se thoda soft */
+  color: #e5e5e5;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  overflow-x: hidden; /* Horizontal scroll band */
+  width: 100%;
+  position: relative;
+}
+
+/* Responsive Typography Adjustment */
+@media (max-width: 768px) {
+  h1 { font-size: 2.5rem !important; } /* Headers ko control mein rakho */
+  h2 { font-size: 2rem !important; }
+}
+
+/* --- CUSTOM SCROLLBAR (The Premium Touch) --- */
+
+/* 1. Width */
+::-webkit-scrollbar {
+  width: 10px; /* Thoda patla taaki sleek lage */
+}
+
+/* 2. Track (Background) */
+::-webkit-scrollbar-track {
+  background: #000000; /* Website background ke saath merge ho jaye */
+}
+
+/* 3. Thumb (Jo scroll hota hai) */
+::-webkit-scrollbar-thumb {
+  background: #333333; /* Dark Grey (Subtle) */
+  border-radius: 999px; /* Pill Shape */
+  border: 2px solid #000000; /* Border hack taaki thumb hawa mein float kare */
+}
+
+/* 4. Hover Effect */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffd700; /* Purple-900: Hover par thoda color aayega */
+}
+
+/* Firefox Support (Optional) */
+/* html {
+  scrollbar-width: thin;
+  scrollbar-color: #333333 #000000;
+} */
