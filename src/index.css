@@ -1,1 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
+
+/* तुम्हारे बाकी के CSS कोड (Scrollbar वगैरा) इसके नीचे रहेंगे */
+
+/* पूरी वेबसाइट पर इस फॉन्ट को फोर्स करने के लिए यह भी डाल दो: */
+body {
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* ==========================================================================
+   CUSTOM GLOBAL SCROLLBAR (Highly Visible Thumb)
+   ========================================================================== */
+
+/* 1. Scrollbar की चौड़ाई (8px रखी है ताकि माउस से पकड़ना आसान हो) */
+::-webkit-scrollbar {
+  width: 8px; 
+}
+
+/* 2. Track (पीछे का रास्ता - हल्का सा डार्क) */
+::-webkit-scrollbar-track {
+  background: #0a0a0a; 
+}
+
+/* 3. Thumb (पकड़ने वाला Head) - अब 100% साफ़ दिखेगा */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5); /* ब्राइटनेस बढ़ा दी है ताकि बिना होवर के साफ़ दिखे */
+  border-radius: 10px; 
+  border: 2px solid #0a0a0a; /* ट्रैक के कलर का बॉर्डर देने से यह एक स्लीक कैप्सूल जैसा लगेगा */
+}
+
+/* 4. Hover State (Magic Gradient) */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #a855f7, #3b82f6); 
+  border: 1px solid #0a0a0a; /* होवर पर थोड़ा और चौड़ा दिखेगा */
+}

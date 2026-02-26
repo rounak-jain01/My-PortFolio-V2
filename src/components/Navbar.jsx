@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react"; // Hamburger icons
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   "Home", 
@@ -15,12 +15,12 @@ const navLinks = [
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
-  const [isOpen, setIsOpen] = useState(false); // Mobile menu toggle state
+  const [isOpen, setIsOpen] = useState(false); 
 
   // --- 1. SMOOTH SCROLL ON CLICK ---
   const handleScrollTo = (link) => {
     setActive(link);
-    setIsOpen(false); // Click karne par mobile menu automatically close ho jaye
+    setIsOpen(false); 
     
     if (link === "Home") {
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -66,7 +66,6 @@ const Navbar = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-      // Responsive width: mobile pe 90% wide, desktop pe auto
       className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90vw] md:w-auto"
     >
       
@@ -74,6 +73,16 @@ const Navbar = () => {
           DESKTOP NAVBAR (Hidden on Mobile)
       ========================================= */}
       <nav className="relative hidden md:flex items-center gap-2 px-3 py-2 bg-[#0a0a0a]/80 backdrop-blur-2xl border border-white/10 rounded-full shadow-[0_10px_40px_rgba(0,0,0,0.8)]">
+        
+        {/* --- DESKTOP LOGO --- */}
+        <div 
+          onClick={() => handleScrollTo("Home")} 
+          className="shrink-0 cursor-pointer flex items-center justify-center pl-3 pr-4 border-r border-white/10 hover:opacity-80 transition-opacity"
+        >
+          {/* Make sure image is in public/images/logo.png */}
+          <img src="/logo.png" alt="Rounak Jain Logo" className="h-7 w-auto object-contain bg/white" />
+        </div>
+
         {navLinks.map((link) => (
           <button
             key={link}
@@ -103,10 +112,22 @@ const Navbar = () => {
         {/* Mobile Top Pill */}
         <div className="flex items-center justify-between px-6 py-4 bg-[#0a0a0a]/90 backdrop-blur-2xl border border-white/10 rounded-full shadow-[0_10px_40px_rgba(0,0,0,0.8)]">
           
-          {/* Currently Active Section Name */}
-          <span className="text-sm font-bold text-white tracking-widest uppercase">
-            {active === "Detail" ? "ABOUT" : active === "Credentials" ? "AWARDS" : active.toUpperCase()}
-          </span>
+          {/* --- MOBILE LOGO & ACTIVE SECTION CONTAINER --- */}
+          <div className="flex items-center gap-4">
+            <img 
+              src="logo.png" 
+              alt="Logo" 
+              className="h-6 w-auto cursor-pointer hover:opacity-80 transition-opacity" 
+              onClick={() => handleScrollTo("Home")} 
+            />
+            {/* Vertical Separator Line */}
+            <div className="w-[1px] h-4 bg-white/20"></div>
+            
+            {/* Currently Active Section Name */}
+            <span className="text-sm font-bold text-white tracking-widest uppercase">
+              {active === "Detail" ? "ABOUT" : active === "Credentials" ? "AWARDS" : active.toUpperCase()}
+            </span>
+          </div>
 
           {/* Hamburger Toggle Button */}
           <button 

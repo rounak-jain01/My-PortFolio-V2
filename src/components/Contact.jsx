@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, MapPin, Send, MessageSquare, Github, Linkedin, Twitter, ArrowUpRight, Instagram } from "lucide-react";
+import { Mail, MapPin, Send, MessageSquare, Github, Linkedin, Twitter, ArrowUpRight, Instagram, PhoneCall } from "lucide-react";
 
 const Contact = () => {
   // Apne actual social media profile links yahan daalna
@@ -64,11 +64,22 @@ const Contact = () => {
               
               <div className="group flex items-center gap-6 p-4 md:p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:bg-white/[0.04] hover:border-purple-500/30 transition-all duration-300">
                 <div className="w-14 h-14 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 group-hover:scale-110 transition-transform duration-300 shrink-0">
+                  <PhoneCall size={24} />
+                </div>
+                <div>
+                  <p className="text-sm font-mono text-gray-500 uppercase tracking-widest mb-1">Contact Me</p>
+                  <p  className="text-lg md:text-xl font-medium text-gray-200 group-hover:text-purple-300 transition-colors">
+                    +919926850762
+                  </p>
+                </div>
+              </div>
+              <div className="group flex items-center gap-6 p-4 md:p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:bg-white/[0.04] hover:border-purple-500/30 transition-all duration-300">
+                <div className="w-14 h-14 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 group-hover:scale-110 transition-transform duration-300 shrink-0">
                   <Mail size={24} />
                 </div>
                 <div>
                   <p className="text-sm font-mono text-gray-500 uppercase tracking-widest mb-1">Email Me</p>
-                  <a href="mailto:hello@rounakjain.com" className="text-lg md:text-xl font-medium text-gray-200 group-hover:text-purple-300 transition-colors">
+                  <a href="rounakjain049@gmail.com" className="text-lg md:text-xl font-medium text-gray-200 group-hover:text-purple-300 transition-colors">
                     rounakjain049@gmail.com
                   </a>
                 </div>
