@@ -20,6 +20,7 @@ import {
   Code,
   Globe,
   Cpu,
+  Feather,
 } from "lucide-react";
 
 // Tumhari core skills
@@ -68,6 +69,11 @@ const skillsData = {
     },
   ],
   Professional: [
+    {
+      name: "Product Management",
+      icon: <Feather size={26} />,
+      desc: "Product Requirement Documents",
+    },
     {
       name: "Problem Solving",
       icon: <Target size={26} />,
@@ -161,12 +167,12 @@ const Skills = () => {
             className="relative z-10 flex flex-col items-center text-center"
           >
             <div className="inline-flex items-center gap-2 px-4 py-1.5 border border-white/10 rounded-full bg-white/[0.03] text-gray-300 text-xs tracking-[0.3em] font-bold uppercase mb-4 backdrop-blur-md">
-              <Zap size={14} className="text-purple-400" /> My Arsenal
+              <Zap size={14} className="text-purple-400" /> My Skillset
             </div>
             <h3 className="text-4xl md:text-6xl font-extrabold text-white tracking-tight text-center">
               Technical{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
-                Prowess.
+                Powers.
               </span>
             </h3>
           </motion.div>

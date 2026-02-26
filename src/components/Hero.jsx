@@ -43,9 +43,9 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.8, ease: "easeOut" }}
-          className="mt-6 md:mt-8 text-xs sm:text-sm md:text-base text-gray-400 font-light tracking-[0.3em] md:tracking-[0.5em] uppercase text-center"
+          className="mt-6 md:mt-8 text-xs sm:text-sm md:text-base text-gray-400 font-bold tracking-[0.3em] md:tracking-[0.5em] uppercase text-center"
         >
-          Building Intelligent Web Experiences
+          Make What's Matters
         </motion.p>
 
       </div>

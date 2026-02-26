@@ -4,39 +4,112 @@ import { Sparkles, ArrowRight, ExternalLink, Award, Trophy, Star } from "lucide-
 
 const credentialsData = {
   Certificates: [
-    { title: "C Programming Certification", issuer: "NPTEL", image: "certificates/nptel.png", link: "certificates/nptel.png", year: "2023" },
-    { title: "HTML5 Certification", issuer: "Infosys Springboard", image: "certificates/Infosys HTML.jpg", link: "#", year: "2023" },
-    { title: "CSS3 Advanced Styling", issuer: "Infosys Springboard", image: "certificates/Infosys CSS.jpg", link: "#", year: "2024" },
-    { title: "JavaScript Fundamentals", issuer: "Infosys Springboard", image: "certificates/Infosys JS.jpg", link: "#", year: "2024" },
-    { title: "Frontend Development", issuer: "Infosys Springboard", image: "certificates/Infosys Frontend.jpg", link: "#", year: "2024" },
-    { title: "Frontend Development", issuer: "Great Learning", image: "certificates/Great Learning.jpg", link: "#", year: "2024" },
-    { title: "Artificial Intelligence", issuer: "AI Builder Lab", image: "certificates/AI Builder Lab.jpg", link: "#", year: "2025" },
-    { title: "Advanced React Patterns", issuer: "Frontend Masters", image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=800&auto=format&fit=crop", link: "#", year: "2025" },
+    { title: "AWS Cloud Fundamental Essentials", issuer: "AWS", image: "certificates/AWS Cloud Certificates.jpg", link: "certificates/AWS Cloud Certificates.jpg", year: "2026" },
+    { title: "Introduction to AI", issuer: "CISCO", image: "certificates/Introduction to AI.jpg", link: "certificates/Introduction to AI.jpg", year: "2025" },
+    { title: "Python Essential 1", issuer: "CISCO", image: "certificates/python cisco.jpg", link: "certificates/python cisco.jpg", year: "2025" },
+    { title: "Google Solution Challenge", issuer: "Google", image: "certificates/Solution Challenge.jpg", link: "certificates/Solution Challenge.jpg", year: "2025" },
+    { title: "Deloite Data Analytics Job Simulation", issuer: "Deloite", image: "certificates/Deloite Data Analytics.jpg", link: "certificates/Deloite Data Analytics.jpg", year: "2025" },
+    { title: "C Programming Certification", issuer: "IIT Kharagpur & NPTEL", image: "certificates/nptel.png", link: "certificates/nptel.png", year: "2023" },
+    { title: "HTML5 Certification", issuer: "Infosys Springboard", image: "certificates/Infosys HTML.jpg", link: "certificates/Infosys HTML.jpg", year: "2023" },
+    { title: "Samadhan 1.0 Hackathon", issuer: "SISTec Bhopal", image: "certificates/Samadhan 1.0.jpg", link: "certificates/Samadhan 1.0.jpg", year: "2024" },
+    { title: "CSS3 Advanced Styling", issuer: "Infosys Springboard", image: "certificates/Infosys CSS.jpg", link: "certificates/Infosys CSS.jpg", year: "2024" },
+    { title: "Hands-on IoT: From Sensors to Cloud", issuer: "SISTec IoT Club", image: "certificates/iot.jpg", link: "certificates/Infosys CSS.jpg", year: "2024" },
+    { title: "JavaScript Fundamentals", issuer: "Infosys Springboard", image: "certificates/Infosys JS.jpg", link: "certificates/Infosys JS.jpg", year: "2024" },
+    { title: "Frontend Development", issuer: "Infosys Springboard", image: "certificates/Infosys Frontend.jpg", link: "certificates/Infosys Frontend.jpg", year: "2024" },
+    { title: "Frontend Development", issuer: "Great Learning", image: "certificates/Great Learning.jpg", link: "ertificates/Great Learning.jpg", year: "2024" },
+    { title: "Artificial Intelligence", issuer: "AI Builder Lab", image: "certificates/AI Builder Lab.jpg", link: "certificates/AI Builder Lab.jpg", year: "2025" },
+    { title: "Git and GitHub", issuer: "Microsoft Learn Student Ambassador", image: "certificates/Git and Github.jpg", link: "certificates/Git and Github.jpg", year: "2024" },
   ],
   Achievements: [
+    
     { 
-      title: "Winner - Smart India Hackathon", 
-      issuer: "Govt. of India", 
-      desc: "Secured 1st position among 500+ teams by building a scalable AI-driven crop prediction model.", 
-      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop", 
-      link: "#", 
-      year: "2024"
-    },
-    { 
-      title: "Global Top 50", 
-      issuer: "AI Prompt Combat", 
-      desc: "Ranked globally in complex prompt engineering challenges.", 
-      image: "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?q=80&w=800&auto=format&fit=crop", 
-      link: "#", 
+      title: "Ted Talks", 
+      issuer: "TedX Sistec", 
+      desc: "I feel truly honored to have been a member of the organizing team for this incredible event at Sagar Group of Institutions - SISTec,  ", 
+      image: "Achievement/TedX.jpg", 
+      link: "Achievement/TedX.jpg", 
       year: "2025"
     },
     { 
-      title: "Open Source Contributor", 
-      issuer: "GSSoC '24", 
-      desc: "Merged 15+ critical PRs in modern web framework repositories.", 
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop", 
-      link: "#", 
+      title: "Super 50 Student", 
+      issuer: "Sagar Group of Institutions", 
+      desc: "𝘐’𝘮 𝘪𝘯𝘤𝘳𝘦𝘥𝘪𝘣𝘭𝘺 𝘱𝘳𝘰𝘶𝘥 𝘵𝘰 𝘣𝘦 𝘴𝘦𝘭𝘦𝘤𝘵𝘦𝘥 𝘢𝘴 𝘰𝘯𝘦 𝘰𝘧 𝘵𝘩𝘦 𝘵𝘰𝘱 50 s𝘵𝘶𝘥𝘦𝘯𝘵𝘴 from CSE, AI & DS, Cyber Security, and ECE! 𝘶𝘯𝘥𝘦𝘳 𝘵𝘩𝘦 𝘚𝘶𝘱𝘦𝘳 50 𝘗𝘳𝘰𝘨𝘳𝘢𝘮 𝘢𝘵 Sagar Group of Institutions - SISTec ", 
+      image: "Achievement/soper 50.jpg", 
+      link: "Achievement/soper 50.jpg", 
+      year: "2025"
+    },
+    { 
+      title: "50 Days Badge", 
+      issuer: "Leetcode", 
+      desc: "Solving problems for 50+ days this year has been a rewarding grind — every challenge sharpened my logic, improved my consistency, and brought me closer to becoming a better developer ", 
+      image: "Achievement/50 Days Leetcode.jpg", 
+      link: "Achievement/50 Days Leetcode.jpg", 
+      year: "2025"
+    },
+    { 
+      title: "Industrial Visit", 
+      issuer: "Netlink Pvt Ltd Bhopal", 
+      desc: "Our visit to 𝗡𝗲𝘁𝗹𝗶𝗻𝗸 𝗦𝗼𝗳𝘁𝘄𝗮𝗿𝗲 𝗣𝘃𝘁. 𝗟𝘁𝗱. offered a firsthand look into how the latest technologies are shaping industries and driving innovation on a global scale. ", 
+      image: "Achievement/netlink.jpg", 
+      link: "Achievement/netlink.jpg", 
+      year: "2025"
+    },
+    { 
+      title: "AI Prompt Combat", 
+      issuer: "Organizing Committee", 
+      desc: "I had the privilege of organizing  “AI Prompt Combat”, an inter-college event conducted by the Kaggle Koders Committee of the Artificial Intelligence & Data Science Department, Sagar Group of Institutions - SISTec .", 
+      image: "Achievement/Kaggle 2025.jpg", 
+      link: "Achievement/Kaggle 2025.jpg", 
+      year: "2025"
+    },
+    { 
+      title: "Felicitation", 
+      issuer: "Sagar Group of Institutes", 
+      desc: "I am honored to be felicitated as one of the NPTEL Achievers at Sagar Group of Institutions - SISTec for successfully completing the NPTEL Online Certification in Problem Solving Through Programming in C++", 
+      image: "Achievement/NPTEL Felicitation.jpg", 
+      link: "Achievement/NPTEL Felicitation.jpg", 
       year: "2024"
+    },
+    
+    { 
+      title: "Google GenAI Event", 
+      issuer: "Google Developers Group SISTec", 
+      desc: "One of the 80 students who completed the Google GenAI event were recognized and celebrated.", 
+      image: "Achievement/Google GenAI.jpg", 
+      link: "Achievement/Google GenAI.jpg", 
+      year: "2024"
+    },
+    { 
+      title: "Google DevFest Bhopal 2K24", 
+      issuer: "Google Developers Group", 
+      desc: "I had the privilege of attending this vibrant and inspiring event hosted at LNCT Group of Colleges, Bhopal. The energy, innovation, and passion of the developer community were truly contagious!", 
+      image: "Achievement/Dev Fest.jpg", 
+      link: "Achievement/Dev Fest.jpg", 
+      year: "2024"
+    },
+    { 
+      title: "Attended - National Yuva Summit", 
+      issuer: "Confederation of Indian Industry Young Indians (CIIYI)", 
+      desc: "The event was an incredible opportunity to gain industry insights and life lessons directly from seasoned professionals and leaders.", 
+      image: "Achievement/Future 2.0.jpg", 
+      link: "Achievement/Future 2.0.jpg", 
+      year: "2024"
+    },
+    { 
+      title: "Participated - Smart India Hackathon", 
+      issuer: "Govt. of India", 
+      desc: "Build a Traffic Management system to solve traffic in metro cities", 
+      image: "Achievement/SIH.jpg", 
+      link: "Achievement/SIH.jpg", 
+      year: "2024"
+    },
+    { 
+      title: " Google Cloud Study Jam", 
+      issuer: "Google Developer Group", 
+      desc: "I gained valuable skills in cloud computing.", 
+      image: "Achievement/GDSC 2023.jpg", 
+      link: "Achievement/GDSC 2023.jpg", 
+      year: "2023"
     },
   ]
 };

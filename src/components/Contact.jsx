@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import { Mail, MapPin, Send, MessageSquare, Github, Linkedin, Twitter, ArrowUpRight } from "lucide-react";
+import { Mail, MapPin, Send, MessageSquare, Github, Linkedin, Twitter, ArrowUpRight, Instagram } from "lucide-react";
 
 const Contact = () => {
   // Apne actual social media profile links yahan daalna
   const socialLinks = [
-    { name: "GitHub", icon: <Github size={20} />, url: "https://github.com/yourusername", hover: "hover:border-white hover:text-white hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]" },
-    { name: "LinkedIn", icon: <Linkedin size={20} />, url: "https://linkedin.com/in/yourusername", hover: "hover:border-blue-500 hover:text-blue-400 hover:shadow-[0_0_20px_rgba(59,130,246,0.2)]" },
-    { name: "Twitter / X", icon: <Twitter size={20} />, url: "https://twitter.com/yourusername", hover: "hover:border-gray-400 hover:text-gray-300 hover:shadow-[0_0_20px_rgba(156,163,175,0.2)]" },
+    { name: "GitHub", icon: <Github size={20} />, url: "https://github.com/rounak-jain01/", hover: "hover:border-white hover:text-white hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]" },
+    { name: "LinkedIn", icon: <Linkedin size={20} />, url: "https://www.linkedin.com/in/imrounakjain/", hover: "hover:border-blue-500 hover:text-blue-400 hover:shadow-[0_0_20px_rgba(59,130,246,0.2)]" },
+    { name: "Instagram", icon: <Instagram size={20} />, url: "https://www.instagram.com/rounak_jain_01/", hover: "hover:border-red-400 hover:text-gray-300 hover:shadow-[0_0_20px_rgba(156,163,175,0.2)]" },
   ];
 
   return (
@@ -69,7 +69,7 @@ const Contact = () => {
                 <div>
                   <p className="text-sm font-mono text-gray-500 uppercase tracking-widest mb-1">Email Me</p>
                   <a href="mailto:hello@rounakjain.com" className="text-lg md:text-xl font-medium text-gray-200 group-hover:text-purple-300 transition-colors">
-                    hello@rounakjain.com
+                    rounakjain049@gmail.com
                   </a>
                 </div>
               </div>
@@ -81,7 +81,7 @@ const Contact = () => {
                 <div>
                   <p className="text-sm font-mono text-gray-500 uppercase tracking-widest mb-1">Location</p>
                   <p className="text-lg md:text-xl font-medium text-gray-200 group-hover:text-blue-300 transition-colors">
-                    Bengaluru, India
+                    Bhopal, India
                   </p>
                 </div>
               </div>

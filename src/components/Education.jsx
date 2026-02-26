@@ -5,7 +5,7 @@ import { GraduationCap, CheckCircle2, Milestone, Calendar, ArrowUpRight } from "
 const educationData = [
   {
     id: 1,
-    period: "2022 — Present",
+    period: "2023 — Present",
     status: "PURSUING",
     degree: "Bachelors of Technology",
     institute: "Sagar Group of Science and Technology",
@@ -24,7 +24,7 @@ const educationData = [
   },
   {
     id: 2,
-    period: "2021 — 2022",
+    period: "2022 — 2023",
     status: "COMPLETED",
     degree: "Higher Secondary",
     institute: "Douglas Higher Secondary School",

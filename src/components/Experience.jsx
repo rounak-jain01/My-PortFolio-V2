@@ -192,7 +192,7 @@ const Experience = () => {
               className="flex flex-wrap gap-x-6 gap-y-4 pt-6 border-t border-white/10"
             >
               {["Research", "Product Requirement Documents", "Creative Thinking"].map((tech) => (
-                <span key={tech} className="text-sm font-mono tracking-wider text-gray-500 hover:text-purple-400 transition-colors cursor-default drop-shadow-md">
+                <span key={tech} className="text-sm font-mono font-bold tracking-wider text-white/800 hover:text-purple-400 transition-colors cursor-default drop-shadow-md">
                   #{tech}
                 </span>
               ))}
@@ -203,7 +203,7 @@ const Experience = () => {
         </div>
 
         {/* --- MASSIVE BACKGROUND WATERMARK --- */}
-        <div className="absolute top-[30%] -right-[10%] text-[20vw] font-black text-white/[0.2] pointer-events-none select-none z-0 transform rotate-90 lg:rotate-0 lg:top-auto lg:bottom-[-5%] lg:right-[5%]">
+        <div className="absolute top-[30%] -right-[10%] text-[20vw] font-black text-white/[0.08] pointer-events-none select-none z-0 transform rotate-90 lg:rotate-0 lg:top-auto lg:bottom-[-5%] lg:right-[5%]">
           INTERN
         </div>
 

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowUp, Heart, MapPin, Sparkles, Github, Linkedin, Twitter } from "lucide-react";
+import { ArrowUp, Heart, MapPin, Sparkles, Github, Linkedin, Twitter, Instagram } from "lucide-react";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -47,7 +47,7 @@ const Footer = () => {
 
             {/* Location Pill */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/10 text-gray-300 text-sm">
-              <MapPin size={16} className="text-purple-400" /> Bengaluru, India
+              <MapPin size={16} className="text-purple-400" /> Bhopal, India
             </div>
           </div>
 
@@ -70,14 +70,14 @@ const Footer = () => {
           {/* Socials */}
           <div className="md:col-span-3 flex flex-col gap-4">
             <h3 className="text-white font-semibold tracking-wider uppercase text-sm mb-2">Socials</h3>
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors w-max">
+            <a href="https://github.com/rounak-jain01/" target="_blank" rel="noreferrer" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors w-max">
               <Github size={18} /> GitHub
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center gap-3 text-gray-400 hover:text-blue-400 transition-colors w-max">
+            <a href="https://www.linkedin.com/in/imrounakjain/" target="_blank" rel="noreferrer" className="flex items-center gap-3 text-gray-400 hover:text-blue-400 transition-colors w-max">
               <Linkedin size={18} /> LinkedIn
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer" className="flex items-center gap-3 text-gray-400 hover:text-gray-200 transition-colors w-max">
-              <Twitter size={18} /> Twitter / X
+            <a href="https://www.instagram.com/rounak_jain_01/" target="_blank" rel="noreferrer" className="flex items-center gap-3 text-gray-400 hover:text-red-200 transition-colors w-max">
+              <Instagram size={18} /> Instagram
             </a>
           </div>
 
@@ -90,7 +90,7 @@ const Footer = () => {
           <div className="text-gray-500 text-xs md:text-sm font-mono tracking-wider text-center md:text-left">
             <p>© {new Date().getFullYear()} Rounak Jain. All rights reserved.</p>
             <p className="mt-1 flex items-center justify-center md:justify-start gap-1">
-              Crafted with <Heart size={14} className="text-red-500 inline fill-red-500" /> & React
+              Crafted with&nbsp;<Heart size={14} className="text-red-500 inline fill-red-500" />&nbsp;& Lot's of <Heart size={14} className="text-red-500 inline fill-red-500" />
             </p>
           </div>
 

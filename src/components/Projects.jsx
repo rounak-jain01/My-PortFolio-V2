@@ -22,7 +22,7 @@ const Projects = () => {
       title: "Fasal Sarthi",
       subtitle: "AI/ML Agricultural Intelligence",
       desc: "An intelligent platform leveraging Machine Learning algorithms to analyze crop data and provide predictive insights. Built with a robust MERN backend to ensure real-time data processing.",
-      tech: ["React.js", "Node.js", "Python", "XGBoost", "MongoDB"],
+      tech: ["React.js", "Python", "EfficientNet-B3", "Supabase", "APIs"],
       imageGlow: "group-hover:shadow-[0_0_80px_rgba(168,85,247,0.3)] border-purple-500/20",
       overlay: "from-purple-900/40 to-transparent",
       accent: "text-purple-400",
@@ -35,7 +35,7 @@ const Projects = () => {
       title: "AI Prompt Combat",
       subtitle: "High-Scale GenAI Event Architecture",
       desc: "Engineered the complete technical infrastructure for a high-scale GenAI event hosting complex Text-to-Text challenges, handling concurrent users with optimized backend.",
-      tech: ["Next.js", "Express", "REST APIs", "GenAI", "Tailwind"],
+      tech: ["React.js", "Python", "Flask", "REST APIs", "Tailwind"],
       imageGlow: "group-hover:shadow-[0_0_80px_rgba(59,130,246,0.3)] border-blue-500/20",
       overlay: "from-blue-900/40 to-transparent",
       accent: "text-blue-400",
@@ -161,7 +161,7 @@ const Projects = () => {
 
 
         {/* --- THE VAULT --- */}
-        {/* <motion.div 
+        <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -172,33 +172,52 @@ const Projects = () => {
             <p className="text-gray-500 font-mono text-xs uppercase tracking-widest">Other Notable Works</p>
           </div>
           
-          <div className="flex flex-col">
+          <div className="flex flex-col w-full">
+            
+            {/* 1. TABLE HEADER (Fixed) */}
             <div className="hidden md:grid grid-cols-12 gap-4 pb-4 border-b border-white/10 text-xs font-mono tracking-widest text-gray-500 uppercase">
               <div className="col-span-5">Project</div>
               <div className="col-span-5">Built With</div>
               <div className="col-span-2 text-right">Year</div>
             </div>
-            {[
-              { name: "Kaggle Koders Portal", tech: "React, Tailwind, Firebase", year: "2025" },
-              { name: "Portfolio v1", tech: "HTML, CSS, JS", year: "2025" },
-              { name: "Weather Node API", tech: "Express.js, Integration", year: "2024" },
-              { name: "TaskMaster Pro", tech: "MERN Stack, Redux", year: "2024" },
-            ].map((item, index) => (
-              <a href="#" key={index} className="group grid grid-cols-1 md:grid-cols-12 gap-4 py-6 border-b border-white/5 hover:bg-white/[0.02] transition-colors -mx-4 px-4 rounded-xl items-center">
-                <div className="md:col-span-5 flex items-center gap-4">
-                  <h4 className="text-lg font-bold text-gray-300 group-hover:text-white transition-colors">{item.name}</h4>
-                </div>
-                <div className="md:col-span-5">
-                  <span className="text-sm text-gray-500 font-light group-hover:text-gray-400 transition-colors">{item.tech}</span>
-                </div>
-                <div className="md:col-span-2 flex items-center justify-between md:justify-end gap-6 mt-2 md:mt-0">
-                  <span className="text-sm font-mono text-gray-600 group-hover:text-gray-400 transition-colors">{item.year}</span>
-                  <ArrowRight size={18} className="text-gray-600 group-hover:text-white transform group-hover:-rotate-45 transition-all duration-300" />
-                </div>
-              </a>
-            ))}
+            
+            {/* 2. SCROLLABLE LIST CONTAINER (With Mask-Image Fade & New Scrollbar) */}
+            <div className="relative w-full">
+              <div 
+                onWheel={(e) => e.stopPropagation()}
+                // 1. NEW SCROLLBAR: Sleek, thin 4px width, distinct dark track, bright thumb on hover
+                // 2. NATIVE FADE MASK: Text naturally fades into transparency at the bottom, syncing with ANY dynamic background!
+                className="flex flex-col h-[400px] overflow-y-auto overscroll-contain pr-4 pt-2 pb-12 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-white/[0.02] [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-thumb]:bg-white/10 hover:[&::-webkit-scrollbar-thumb]:bg-white/30 [&::-webkit-scrollbar-thumb]:rounded-full transition-colors [mask-image:linear-gradient(to_bottom,white_80%,transparent_100%)]"
+              >
+                {[
+                  { name: "Bank Management System", tech: "Python", year: "2026" },
+                  { name: "Portfolio v1", tech: "HTML, CSS, JS", year: "2025" },
+                  { name: "Swiggy Clone", tech: "React", year: "2025" },
+                  { name: "IPL Web App", tech: "MERN Stack, Redux", year: "2025" },
+                  { name: "Weather App", tech: "React, OpenWeatherAPI", year: "2025" },
+                  { name: "Emoji Generator", tech: "React", year: "2025" },
+                  { name: "Bus Ticket Booking App", tech: "C++", year: "2024" },
+                ].map((item, index) => (
+                  <a href="https://github.com/rounak-jain01?tab=repositories" target="_blank" rel="noreferrer" key={index} className="group grid grid-cols-1 md:grid-cols-12 gap-4 py-6 border-b border-white/5 hover:bg-white/[0.02] transition-colors -mx-4 px-4 rounded-xl items-center shrink-0">
+                    <div className="md:col-span-5 flex items-center gap-4">
+                      <h4 className="text-lg font-bold text-gray-300 group-hover:text-white transition-colors">{item.name}</h4>
+                    </div>
+                    <div className="md:col-span-5">
+                      <span className="text-sm text-gray-500 font-light group-hover:text-gray-400 transition-colors">{item.tech}</span>
+                    </div>
+                    <div className="md:col-span-2 flex items-center justify-between md:justify-end gap-6 mt-2 md:mt-0">
+                      <span className="text-sm font-mono text-gray-600 group-hover:text-gray-400 transition-colors">{item.year}</span>
+                      <ArrowRight size={18} className="text-gray-600 group-hover:text-white transform group-hover:-rotate-45 transition-all duration-300" />
+                    </div>
+                  </a>
+                ))}
+              </div>
+
+              {/* Note: Purana solid black bottom-fade div yahan se hata diya gaya है */}
+            </div>
+
           </div>
-        </motion.div> */}
+        </motion.div>
 
       </div>
     </section>
