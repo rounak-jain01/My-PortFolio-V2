@@ -78,7 +78,7 @@ const Experience = () => {
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500 shadow-[0_0_15px_rgba(59,130,246,0.8)]"></span>
               </span>
               <span className="text-blue-400 font-mono text-xs md:text-sm tracking-widest uppercase">
-                Presently Interning
+                Present Intern
               </span>
             </motion.div>
 
