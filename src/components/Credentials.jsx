@@ -5,6 +5,7 @@ import { Sparkles, ArrowRight, ExternalLink, Award, Trophy, Star } from "lucide-
 const credentialsData = {
   Certificates: [
     { title: "AWS Cloud Fundamental Essentials", issuer: "AWS", image: "certificates/AWS Cloud Certificates.jpg", link: "certificates/AWS Cloud Certificates.jpg", year: "2026" },
+    { title: "AI Impact Summit Buildathon", issuer: "Guvi | HCL", image: "certificates/HCL GUVI Certification.png", link: "certificates/HCL GUVI Certification.png", year: "2026" },
     { title: "Introduction to AI", issuer: "CISCO", image: "certificates/Introduction to AI.jpg", link: "certificates/Introduction to AI.jpg", year: "2025" },
     { title: "Python Essential 1", issuer: "CISCO", image: "certificates/python cisco.jpg", link: "certificates/python cisco.jpg", year: "2025" },
     { title: "Google Solution Challenge", issuer: "Google", image: "certificates/Solution Challenge.jpg", link: "certificates/Solution Challenge.jpg", year: "2025" },
