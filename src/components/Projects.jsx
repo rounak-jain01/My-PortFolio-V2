@@ -39,7 +39,7 @@ const Projects = () => {
       imageGlow: "group-hover:shadow-[0_0_80px_rgba(59,130,246,0.3)] border-blue-500/20",
       overlay: "from-blue-900/40 to-transparent",
       accent: "text-blue-400",
-      preview: "https://ai-prompt-sistec-hbir.vercel.app/",
+      preview: "https://www.aipromptcombat.in/",
       source: "https://github.com/rounak-jain01/AI-Prompt-Combat", // Replace with actual link
       photo: "/images/ai_prompt.png" // Make sure this image exists in public/images/
     },
