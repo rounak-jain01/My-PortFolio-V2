@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Sparkles, ArrowRight, ExternalLink, Award, Trophy, Star } from "lucide-react";
+import { Sparkles, ArrowRight, ExternalLink, Award } from "lucide-react";
 
 const credentialsData = {
   Certificates: [
@@ -17,16 +17,15 @@ const credentialsData = {
     { title: "Hands-on IoT: From Sensors to Cloud", issuer: "SISTec IoT Club", image: "certificates/iot.jpg", link: "certificates/Infosys CSS.jpg", year: "2024" },
     { title: "JavaScript Fundamentals", issuer: "Infosys Springboard", image: "certificates/Infosys JS.jpg", link: "certificates/Infosys JS.jpg", year: "2024" },
     { title: "Frontend Development", issuer: "Infosys Springboard", image: "certificates/Infosys Frontend.jpg", link: "certificates/Infosys Frontend.jpg", year: "2024" },
-    { title: "Frontend Development", issuer: "Great Learning", image: "certificates/Great Learning.jpg", link: "ertificates/Great Learning.jpg", year: "2024" },
+    { title: "Frontend Development", issuer: "Great Learning", image: "certificates/Great Learning.jpg", link: "certificates/Great Learning.jpg", year: "2024" }, // Fixed link typo here
     { title: "Artificial Intelligence", issuer: "AI Builder Lab", image: "certificates/AI Builder Lab.jpg", link: "certificates/AI Builder Lab.jpg", year: "2025" },
     { title: "Git and GitHub", issuer: "Microsoft Learn Student Ambassador", image: "certificates/Git and Github.jpg", link: "certificates/Git and Github.jpg", year: "2024" },
   ],
   Achievements: [
-    
     { 
       title: "Ted Talks", 
       issuer: "TedX Sistec", 
-      desc: "I feel truly honored to have been a member of the organizing team for this incredible event at Sagar Group of Institutions - SISTec,  ", 
+      desc: "I feel truly honored to have been a member of the organizing team for this incredible event at Sagar Group of Institutions - SISTec.", 
       image: "Achievement/TedX.jpg", 
       link: "Achievement/TedX.jpg", 
       year: "2025"
@@ -34,7 +33,7 @@ const credentialsData = {
     { 
       title: "Super 50 Student", 
       issuer: "Sagar Group of Institutions", 
-      desc: "𝘐’𝘮 𝘪𝘯𝘤𝘳𝘦𝘥𝘪𝘣𝘭𝘺 𝘱𝘳𝘰𝘶𝘥 𝘵𝘰 𝘣𝘦 𝘴𝘦𝘭𝘦𝘤𝘵𝘦𝘥 𝘢𝘴 𝘰𝘯𝘦 𝘰𝘧 𝘵𝘩𝘦 𝘵𝘰𝘱 50 s𝘵𝘶𝘥𝘦𝘯𝘵𝘴 from CSE, AI & DS, Cyber Security, and ECE! 𝘶𝘯𝘥𝘦𝘳 𝘵𝘩𝘦 𝘚𝘶𝘱𝘦𝘳 50 𝘗𝘳𝘰𝘨𝘳𝘢𝘮 𝘢𝘵 Sagar Group of Institutions - SISTec ", 
+      desc: "I'm incredibly proud to be selected as one of the top 50 students from CSE, AI & DS, Cyber Security, and ECE! under the Super 50 Program at Sagar Group of Institutions - SISTec.", 
       image: "Achievement/soper 50.jpg", 
       link: "Achievement/soper 50.jpg", 
       year: "2025"
@@ -42,7 +41,7 @@ const credentialsData = {
     { 
       title: "50 Days Badge", 
       issuer: "Leetcode", 
-      desc: "Solving problems for 50+ days this year has been a rewarding grind — every challenge sharpened my logic, improved my consistency, and brought me closer to becoming a better developer ", 
+      desc: "Solving problems for 50+ days this year has been a rewarding grind — every challenge sharpened my logic, improved my consistency, and brought me closer to becoming a better developer.", 
       image: "Achievement/50 Days Leetcode.jpg", 
       link: "Achievement/50 Days Leetcode.jpg", 
       year: "2025"
@@ -50,7 +49,7 @@ const credentialsData = {
     { 
       title: "Industrial Visit", 
       issuer: "Netlink Pvt Ltd Bhopal", 
-      desc: "Our visit to 𝗡𝗲𝘁𝗹𝗶𝗻𝗸 𝗦𝗼𝗳𝘁𝘄𝗮𝗿𝗲 𝗣𝘃𝘁. 𝗟𝘁𝗱. offered a firsthand look into how the latest technologies are shaping industries and driving innovation on a global scale. ", 
+      desc: "Our visit to Netlink Software Pvt. Ltd. offered a firsthand look into how the latest technologies are shaping industries and driving innovation on a global scale.", 
       image: "Achievement/netlink.jpg", 
       link: "Achievement/netlink.jpg", 
       year: "2025"
@@ -58,7 +57,7 @@ const credentialsData = {
     { 
       title: "AI Prompt Combat", 
       issuer: "Organizing Committee", 
-      desc: "I had the privilege of organizing  “AI Prompt Combat”, an inter-college event conducted by the Kaggle Koders Committee of the Artificial Intelligence & Data Science Department, Sagar Group of Institutions - SISTec .", 
+      desc: "I had the privilege of organizing “AI Prompt Combat”, an inter-college event conducted by the Kaggle Koders Committee of the Artificial Intelligence & Data Science Department, Sagar Group of Institutions - SISTec.", 
       image: "Achievement/Kaggle 2025.jpg", 
       link: "Achievement/Kaggle 2025.jpg", 
       year: "2025"
@@ -71,7 +70,6 @@ const credentialsData = {
       link: "Achievement/NPTEL Felicitation.jpg", 
       year: "2024"
     },
-    
     { 
       title: "Google GenAI Event", 
       issuer: "Google Developers Group SISTec", 
@@ -105,7 +103,7 @@ const credentialsData = {
       year: "2024"
     },
     { 
-      title: " Google Cloud Study Jam", 
+      title: "Google Cloud Study Jam", 
       issuer: "Google Developer Group", 
       desc: "I gained valuable skills in cloud computing.", 
       image: "Achievement/GDSC 2023.jpg", 
@@ -130,7 +128,7 @@ const Credentials = () => {
   return (
     <section className="relative w-full bg-[#050505] py-24 md:py-32 overflow-hidden font-sans" id="Credentials">
       
-      {/* STATIC BACKGROUND (Zero Lag) */}
+      {/* STATIC BACKGROUND */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,#1a103d_0%,#050505_80%)] opacity-50"></div>
         <div className="absolute top-[20%] right-[10%] w-[500px] h-[500px] bg-purple-600/10 blur-[120px] rounded-full"></div>
@@ -188,10 +186,9 @@ const Credentials = () => {
         {/* SPLIT LAYOUT */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
-          {/* LEFT: Mouse-Scrollable List (Now with Scroll Isolation) */}
+          {/* LEFT: Mouse-Scrollable List */}
           <div className="lg:col-span-5 relative z-20">
             <div 
-              // Yeh onWheel event website ko scroll hone se rokega jab tum list par scroll karoge
               onWheel={(e) => e.stopPropagation()} 
               className="flex flex-col gap-3 h-[500px] lg:h-[600px] overflow-y-auto overscroll-contain pr-2 md:pr-4 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-white/[0.02] [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-thumb]:bg-white/20 hover:[&::-webkit-scrollbar-thumb]:bg-white/40 [&::-webkit-scrollbar-thumb]:rounded-full transition-colors transform-gpu scroll-smooth"
             >
@@ -222,10 +219,51 @@ const Credentials = () => {
                         {item.title}
                       </h4>
                       
-                      <div className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 transform-gpu ${isActive ? "bg-white text-black rotate-0" : "bg-white/5 text-gray-500 group-hover:bg-white/10 group-hover:text-white -rotate-45"}`}>
+                      <div className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 transform-gpu ${isActive ? "bg-white text-black rotate-90 lg:rotate-0" : "bg-white/5 text-gray-500 group-hover:bg-white/10 group-hover:text-white -rotate-45"}`}>
                         <ArrowRight size={16} />
                       </div>
                     </div>
+
+                    {/* ====================================================
+                        NEW: MOBILE IMAGE REVEAL (Hidden on Desktop)
+                    ==================================================== */}
+                    <AnimatePresence>
+                      {isActive && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0, marginTop: 0 }}
+                          animate={{ height: "auto", opacity: 1, marginTop: 16 }}
+                          exit={{ height: 0, opacity: 0, marginTop: 0 }}
+                          // 'lg:hidden' ensures this accordion style only shows on mobile/tablet
+                          className="lg:hidden overflow-hidden flex flex-col"
+                        >
+                          <div className="relative w-full rounded-xl overflow-hidden bg-[#111] border border-white/10 mb-4">
+                            <img 
+                              src={item.image} 
+                              alt={item.title} 
+                              loading="lazy"
+                              className="w-full h-auto object-contain max-h-[250px]" 
+                            />
+                          </div>
+                          
+                          {item.desc && (
+                            <p className="text-gray-400 text-sm mb-4 font-light leading-relaxed">
+                              {item.desc}
+                            </p>
+                          )}
+                          
+                          <a 
+                            href={item.link} 
+                            target="_blank" 
+                            rel="noreferrer"
+                            className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white hover:text-black transition-colors"
+                          >
+                            View Document <ExternalLink size={14} />
+                          </a>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                    {/* ==================================================== */}
+
                   </div>
                 );
               })}
@@ -235,7 +273,7 @@ const Credentials = () => {
             <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-[#050505] to-transparent pointer-events-none rounded-b-3xl"></div>
           </div>
 
-          {/* RIGHT: Sticky Spotlight (Lag-Free) */}
+          {/* RIGHT: Sticky Spotlight (Desktop Only) */}
           <div className="lg:col-span-7 sticky top-32 hidden lg:block h-[600px] transform-gpu">
             <AnimatePresence mode="wait">
               <motion.div
