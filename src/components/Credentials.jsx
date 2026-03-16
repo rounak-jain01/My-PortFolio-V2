@@ -4,6 +4,7 @@ import { Sparkles, ArrowRight, ExternalLink, Award } from "lucide-react";
 
 const credentialsData = {
   Certificates: [
+    { title: "Introduction to Cyber Security", issuer: "CISCO", image: "certificates/Introduction to Cyber Security CISCO.jpg", link: "certificates/Introduction to Cyber Security CISCO.jpg", year: "2026" },
     { title: "AWS Cloud Fundamental Essentials", issuer: "AWS", image: "certificates/AWS Cloud Certificates.jpg", link: "certificates/AWS Cloud Certificates.jpg", year: "2026" },
     { title: "AI Impact Summit Buildathon", issuer: "Guvi | HCL", image: "certificates/HCL GUVI Certification.png", link: "certificates/HCL GUVI Certification.png", year: "2026" },
     { title: "Introduction to AI", issuer: "CISCO", image: "certificates/Introduction to AI.jpg", link: "certificates/Introduction to AI.jpg", year: "2025" },
@@ -141,7 +142,7 @@ const Credentials = () => {
         <div className="relative w-full flex items-center justify-center py-10 mb-12 md:mb-20">
           <h2 className="absolute text-[13vw] md:text-[11vw] font-black uppercase tracking-tighter text-transparent select-none opacity-20"
               style={{ WebkitTextStroke: "1px rgba(255, 255, 255, 0.1)" }}>
-            AWARDS
+            Certificates
           </h2>
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
@@ -153,7 +154,7 @@ const Credentials = () => {
               <Sparkles size={14} className="text-purple-400" /> Proof of Work
             </div>
             <h3 className="text-4xl md:text-6xl font-extrabold text-white tracking-tight text-center">
-              Credentials <span className="text-gray-500 font-light">&</span> <br className="md:hidden" />
+              Certificates <span className="text-gray-500 font-light">&</span> <br className="md:hidden" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-fuchsia-500 to-blue-500">Achievements.</span>
             </h3>
           </motion.div>

@@ -99,7 +99,7 @@ const Navbar = () => {
               />
             )}
             <span className="relative z-10">
-              {link === "Detail" ? "About" : link === "Credentials" ? "Awards" : link}
+              {link === "Detail" ? "About" : link === "Credentials" ? "Certificates" : link}
             </span>
           </button>
         ))}
@@ -125,7 +125,7 @@ const Navbar = () => {
             
             {/* Currently Active Section Name */}
             <span className="text-sm font-bold text-white tracking-widest uppercase">
-              {active === "Detail" ? "ABOUT" : active === "Credentials" ? "AWARDS" : active.toUpperCase()}
+              {active === "Detail" ? "ABOUT" : active === "Credentials" ? "Certificates" : active.toUpperCase()}
             </span>
           </div>
 
@@ -158,7 +158,7 @@ const Navbar = () => {
                       : "text-gray-400 hover:bg-white/[0.03] hover:text-gray-200"
                   }`}
                 >
-                  {link === "Detail" ? "About" : link === "Credentials" ? "Awards" : link}
+                  {link === "Detail" ? "About" : link === "Credentials" ? "Certificates" : link}
                 </button>
               ))}
             </motion.div>
