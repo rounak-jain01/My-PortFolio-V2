@@ -4,6 +4,7 @@ import { Sparkles, ArrowRight, ExternalLink, Award } from "lucide-react";
 
 const credentialsData = {
   Certificates: [
+    { title: "AI Fluency: Framework and Foundation", issuer: "ANTHROP/C", image: "certificates/AI Fluency.jpg", link: "certificates/AI Fluency.jpg", year: "2026" },
     { title: "Introduction to Cyber Security", issuer: "CISCO", image: "certificates/Introduction to Cyber Security CISCO.jpg", link: "certificates/Introduction to Cyber Security CISCO.jpg", year: "2026" },
     { title: "AWS Cloud Fundamental Essentials", issuer: "AWS", image: "certificates/AWS Cloud Certificates.jpg", link: "certificates/AWS Cloud Certificates.jpg", year: "2026" },
     { title: "AI Impact Summit Buildathon", issuer: "Guvi | HCL", image: "certificates/HCL GUVI Certification.png", link: "certificates/HCL GUVI Certification.png", year: "2026" },
