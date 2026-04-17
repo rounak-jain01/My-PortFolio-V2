@@ -4,6 +4,7 @@ import { Sparkles, ArrowRight, ExternalLink, Award } from "lucide-react";
 
 const credentialsData = {
   Certificates: [
+    { title: "CCNA: Introduction to Networks", issuer: "CISCO", image: "certificates/CCNA: Introduction to Networks.jpg", link: "certificates/CCNA: Introduction to Networks.jpg", year: "2026" },
     { title: "AI Fluency: Framework and Foundation", issuer: "ANTHROP/C", image: "certificates/AI Fluency.jpg", link: "certificates/AI Fluency.jpg", year: "2026" },
     { title: "Introduction to Cyber Security", issuer: "CISCO", image: "certificates/Introduction to Cyber Security CISCO.jpg", link: "certificates/Introduction to Cyber Security CISCO.jpg", year: "2026" },
     { title: "AWS Cloud Fundamental Essentials", issuer: "AWS", image: "certificates/AWS Cloud Certificates.jpg", link: "certificates/AWS Cloud Certificates.jpg", year: "2026" },
