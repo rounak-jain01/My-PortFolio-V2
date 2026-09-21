@@ -192,7 +192,7 @@ const Experience = () => {
               className="flex flex-wrap gap-x-6 gap-y-4 pt-6 border-t border-white/10"
             >
               {["Research", "Product Requirement Documents", "Creative Thinking"].map((tech) => (
-                <span key={tech} className="text-sm font-mono font-bold tracking-wider text-white/800 hover:text-purple-400 transition-colors cursor-default drop-shadow-md">
+                <span key={tech} className="text-sm font-mono font-bold tracking-wider text-white/200 hover:text-purple-400 transition-colors cursor-default drop-shadow-md">
                   #{tech}
                 </span>
               ))}
